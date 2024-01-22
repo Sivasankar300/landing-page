@@ -1,0 +1,42 @@
+.Header, .UpperContent, .Footer{
+    background-color: #1F2937;
+}
+
+.UpperContent .Title {
+    font-size:48px;
+    font-weight: bolder;
+    color:#f9faf8;
+}
+
+.UpperContent .Text, .Header .Links{
+    font-size: 18px;
+    color:#E5E7EB;
+
+}
+
+.Header .Logo{
+    font-size:24px;
+    color:#f9faf8;
+}
+
+Button{
+    color:#3882f6;
+}
+
+.MiddleContent .Title{
+    font-weight: bolder;
+    font-size:36px;
+    color:#1f2937;
+}
+
+.LowerContent {
+    background-color: #e5e7eb;
+}
+
+.VeryBerryInspiringQuote{
+    font-size: 36px;
+    color:#1f2937;
+    
+}
+
+
