@@ -1,3 +1,4 @@
+
 .Header, .UpperContent, .Footer{
     background-color: #1F2937;
 }
@@ -11,12 +12,14 @@
 .UpperContent .Text, .Header .Links{
     font-size: 18px;
     color:#E5E7EB;
+    
 
 }
 
 .Header .Logo{
     font-size:24px;
     color:#f9faf8;
+    font-weight: bolder;
 }
 
 Button{
@@ -38,5 +41,46 @@ Button{
     color:#1f2937;
     
 }
+
+.VeryLowerContent {
+    background-color:#3882f6;
+}
+
+*{
+    font-family:roboto;
+}
+
+/* Flexbox below */
+
+.Header{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom:64px;
+}
+
+.Links {
+    display:flex;
+    justify-content: space-around;
+    gap:16px;
+}
+
+.UpperContent{
+    display:flex;
+}
+
+body {
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.UpperContent .left{
+    display:flex;
+}
+
+h1.Title {
+    flex-wrap:wrap;
+}
+
 
 
