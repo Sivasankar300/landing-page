@@ -1,61 +1,60 @@
-
-.Header, .UpperContent, .Footer{
+.Header ,.UpperContent{
     background-color: #1F2937;
 }
-
-.UpperContent .Title {
-    font-size:48px;
-    font-weight: bolder;
-    color:#f9faf8;
-}
-
-.UpperContent .Text, .Header .Links{
+.Header .Links, .UpperContent .left .Text{
     font-size: 18px;
-    color:#E5E7EB;
-    
-
+    color: #E5E7EB;
 }
-
 .Header .Logo{
-    font-size:24px;
-    color:#f9faf8;
+    font-size: 24px;
+    color: #f9FAF8;
+    font-weight: bold
+}
+.UpperContent .Left .Title{
+    font-size: 48px;
     font-weight: bolder;
+    color: #f9FAF8;
 }
-
-Button{
-    color:#3882f6;
+.UpperContent .Left .Text{
+    color:#E5E7EB;
+    font-size: 18px;
 }
-
-.MiddleContent .Title{
-    font-weight: bolder;
-    font-size:36px;
-    color:#1f2937;
-}
-
-.LowerContent {
-    background-color: #e5e7eb;
-}
-
-.VeryBerryInspiringQuote{
-    font-size: 36px;
-    color:#1f2937;
+.UpperContent .Right {
+    background-color: grey;
+    text-align: center;
     
 }
 
-.VeryLowerContent {
-    background-color:#3882f6;
-}
+
 
 *{
     font-family:roboto;
 }
 
-/* Flexbox below */
+/* Margin, Paddings below */
 
 .Header{
     display:flex;
     justify-content: space-between;
     padding-bottom:64px;
+    padding-top:16px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.UpperContent{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom:64px;
+}
+
+.UpperContent .Left{
+    width: 50%;
+    padding-right: 40px;
+}
+
+.UpperContent .Right{
+    width: 50%;
 }
 
 .Links {
@@ -71,6 +70,7 @@ Button{
 body {
     display:flex;
     flex-direction:column;
+    margin:0px
     
 }
 
@@ -82,5 +82,83 @@ h1.Title {
     flex-wrap:wrap;
 }
 
+.UpperContent .Sign1{
+    background-color: #3882f6;
+    border-radius: 8px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
 
+.UpperContent .Text{
+    margin-bottom: 20px;
+}
+
+.MiddleContent{
+    text-align: center;
+    margin-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.MiddleContent .Boxes .Box {
+    border-width: 5px;
+    border-color: #3882f6;
+    border-radius: 8px;
+    border-style:solid;
+    width: 250px;
+    height: 150px;
+
+}
+.MiddleContent .Boxes {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+
+}
+.MiddleContent .Subtexts {
+    display:flex;
+    align-items: stretch;
+}
+.LowerContent{
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: #E5E7EB;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.LowerContent .Quote{
+    font-size: 36px;
+    font-style: italic;
+    color:#1F2937
+}
+
+.VeryLowerContent{
+    margin-left: 150px;
+    margin-right: 150px; 
+    margin-top: 75px;
+    margin-bottom: 75px;
+    padding: 30px;
+    padding-left:80px ;
+    padding-right:80;
+    text-align: left;
+    background-color: #3882f6;
+    color:white;
+    border-radius: 8px;
+}
+
+.VeryLowerContent .Title{
+    font-weight: bolder;
+
+}
+
+.Footer{
+    background-color: #1F2937;
+    padding: 30px;
+    color:#E5E7EB;
+    text-align: center;
+
+}
 
